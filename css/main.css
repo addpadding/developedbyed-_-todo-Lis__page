@@ -1,0 +1,130 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #fff;
+  outline: none;
+}
+form .btn_plus {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  color: #ff6f47;
+  background-color: #f7fffe;
+  cursor: pointer;
+}
+form .btn_plus i {
+  transition: 0.3s;
+}
+form .btn_plus i:hover {
+  transform: rotate(180deg);
+}
+form .select_box {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+form .select_box::after {
+  content: "▼";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff6f47;
+  padding: 1rem;
+  pointer-events: none;
+}
+form .select_box .filter_select {
+  appearance: none;
+  outline: none;
+  border: none;
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .ul_list {
+  min-width: 30%;
+  list-style: none;
+}
+.container .ul_list .div_todo {
+  margin: 0.5rem;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.container .ul_list .div_todo.completed_class {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.container .ul_list .div_todo.fall_class {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+.container .ul_list .div_todo .li_item {
+  flex: 1;
+  padding: 0 0.5rem;
+}
+.container .ul_list .div_todo .complete_btn {
+  color: #fff;
+  background-color: #ff6f47;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.container .ul_list .div_todo .complete_btn i {
+  pointer-events: none;
+}
+.container .ul_list .div_todo .trash_btn {
+  color: #fff;
+  background-color: rgb(73, 204, 73);
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.container .ul_list .div_todo .trash_btn i {
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=main.css.map */
